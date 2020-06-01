@@ -30,7 +30,7 @@ def readText():
     text1 = input_text.get()
     speak(text1)
     
-#wishMe()
+wishMe()
 #creating canvas
 canvas = tk.Canvas(root,height=720,width=1280,bg="#006871").pack()
 root.title("Audiobook App")
