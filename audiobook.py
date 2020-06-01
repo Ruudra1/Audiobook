@@ -20,11 +20,11 @@ def speak(audio):
 def wishMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
-        speak("Good Morning Boss!")
+        speak("Good Morning Boss! , Welcome to this application!")
     elif hour>=12 and hour<18:
-        speak("Good afternoon Boss!")
+        speak("Good afternoon Boss! , Welcome to this application!")
     else:
-        speak("Good Evening Boss!")
+        speak("Good Evening Boss! , Welcome to this application!")
         
 def readText():
     text1 = input_text.get()
@@ -43,7 +43,7 @@ frame.place(relwidth=0.8,relheight=0.8,relx=0.1,rely=0.1)
 Label(frame,text="Welcome to this application!",font =16,fg="white",bg="black").pack()#place(x=80,y=50)
 Label(frame,text="Enter Text to read:",fg="white",bg="black").place(x=60,y=75)
 
-#crating entry box
+#creating entry box
 input_text=StringVar()
 Entry(frame,text="",textvar=input_text,width=115).place(x=60,y=100)
 
